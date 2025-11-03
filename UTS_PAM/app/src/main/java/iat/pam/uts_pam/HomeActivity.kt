@@ -9,57 +9,58 @@ import androidx.appcompat.app.AppCompatActivity
 
 class HomeActivity : AppCompatActivity() {
 
-    // Mengubah tipe data menjadi MutableList<String> untuk mendukung banyak item
-    // Namun, berdasarkan logika Checkout Anda yang hanya mengirim satu item,
-    // kita tetap menggunakan String? untuk item terakhir yang diklik.
     private var selectedMenu: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        // 1. Ambil data nama dari Intent sebelumnya
         val nama = intent.getStringExtra("nama")
         findViewById<TextView>(R.id.tvNama).text = "Halo, $nama"
 
-        // 2. Deklarasi dan inisialisasi semua Button (termasuk btnBuy3 yang hilang)
+        // =======================
+        // DEKLARASI SEMUA BUTTON
+        // =======================
         val btnBuy1 = findViewById<Button>(R.id.btnBuy1)
         val btnBuy2 = findViewById<Button>(R.id.btnBuy2)
-        // PERBAIKAN: Deklarasi btnBuy3
         val btnBuy3 = findViewById<Button>(R.id.btnBuy3)
+        val btnBuy4 = findViewById<Button>(R.id.btnBuy4)
+        val btnBuy5 = findViewById<Button>(R.id.btnBuy5)
+        val btnBuy6 = findViewById<Button>(R.id.btnBuy6)
+        val btnBuy7 = findViewById<Button>(R.id.btnBuy7)
+        val btnBuy8 = findViewById<Button>(R.id.btnBuy8)
+        val btnBuy9 = findViewById<Button>(R.id.btnBuy9)
+        val btnBuy10 = findViewById<Button>(R.id.btnBuy10)
         val btnCheckout = findViewById<Button>(R.id.btnCheckout)
 
-        // --- Atur Listener Tombol Beli ---
+        // =======================
+        // LISTENER SET MENU
+        // =======================
+        btnBuy1.setOnClickListener { chooseMenu("Beef Steak") }
+        btnBuy2.setOnClickListener { chooseMenu("Red Velvet Cake") }
+        btnBuy3.setOnClickListener { chooseMenu("Matcha") }
+        btnBuy4.setOnClickListener { chooseMenu("Bruule Cheese") }
+        btnBuy5.setOnClickListener { chooseMenu("Capucino") }
+        btnBuy6.setOnClickListener { chooseMenu("Geprek") }
+        btnBuy7.setOnClickListener { chooseMenu("Milkshake") }
+        btnBuy8.setOnClickListener { chooseMenu("Pancake") }
+        btnBuy9.setOnClickListener { chooseMenu("Risol Mayo") }
+        btnBuy10.setOnClickListener { chooseMenu("Spageti") }
 
-        // Pilih menu Beef Steak
-        btnBuy1.setOnClickListener {
-            selectedMenu = "Beef Steak"
-            Toast.makeText(this, "Kamu membeli Beef Steak!", Toast.LENGTH_SHORT).show()
-        }
-
-        // Pilih menu Red Velvet Cake
-        btnBuy2.setOnClickListener {
-            selectedMenu = "Red Velvet Cake"
-            Toast.makeText(this, "Kamu membeli Red Velvet Cake!", Toast.LENGTH_SHORT).show()
-        }
-
-        //Pilih menu Matcha
-        btnBuy3.setOnClickListener {
-            selectedMenu = "Matcha" // PERBAIKAN: Simpan "Matcha"
-            Toast.makeText(this, "Kamu membeli Matcha!", Toast.LENGTH_SHORT).show()
-        }
-
-        // Button Check Out
         btnCheckout.setOnClickListener {
             if (selectedMenu == null) {
-                Toast.makeText(this, "Silakan pilih menu terlebih dahulu", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Silakan pilih menu dulu", Toast.LENGTH_SHORT).show()
             } else {
                 val intent = Intent(this, AddressActivity::class.java)
                 intent.putExtra("nama", nama)
-                // Mengirim menu yang terakhir dipilih
                 intent.putExtra("menu", selectedMenu)
                 startActivity(intent)
             }
         }
+    }
+
+    private fun chooseMenu(menu: String) {
+        selectedMenu = menu
+        Toast.makeText(this, "Kamu memilih $menu", Toast.LENGTH_SHORT).show()
     }
 }

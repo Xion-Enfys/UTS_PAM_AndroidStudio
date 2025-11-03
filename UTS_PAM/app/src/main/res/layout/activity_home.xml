@@ -19,6 +19,7 @@
             android:textStyle="bold"
             android:layout_marginBottom="16dp" />
 
+        <!-- ITEM 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,19 +43,18 @@
                 android:layout_weight="1">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Beef Steak"
                     android:textStyle="bold"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"/>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rp50.000"
                     android:textColor="#777"
-                    android:layout_marginTop="4dp" />
-
+                    android:layout_marginTop="4dp"/>
             </LinearLayout>
 
             <Button
@@ -66,7 +66,7 @@
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 
-
+        <!-- ITEM 2 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,18 +90,18 @@
                 android:layout_weight="1">
 
                 <TextView
-                    android:text="Red Velvet Cake"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Red Velvet Cake"
                     android:textStyle="bold"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"/>
 
                 <TextView
-                    android:text="Rp15.000"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Rp15.000"
                     android:textColor="#777"
-                    android:layout_marginTop="4dp" />
+                    android:layout_marginTop="4dp"/>
             </LinearLayout>
 
             <Button
@@ -111,59 +111,395 @@
                 android:text="Buy"
                 android:backgroundTint="#000000"
                 android:textColor="#FFFFFF" />
-            **</LinearLayout>** <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:padding="8dp"
-        android:elevation="2dp"
-        android:layout_marginBottom="8dp">
-
-        <ImageView
-            android:layout_width="90dp"
-            android:layout_height="80dp"
-            android:src="@drawable/matcha"
-            android:scaleType="centerCrop"
-            android:layout_marginEnd="8dp" />
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <TextView
-                android:text="Matcha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textSize="16sp" />
-
-            <TextView
-                android:text="Rp25.000"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#777"
-                android:layout_marginTop="4dp" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btnBuy3"
-            android:layout_width="wrap_content"
+        <!-- ITEM 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Buy"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:src="@drawable/matcha"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Matcha"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp25.000"
+                    android:textColor="#777"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuy3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+
+        <!-- ITEM 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bruule_cheese"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bruule Cheese"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp30.000"
+                    android:textColor="#777"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuy4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- ITEM 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:src="@drawable/capucino"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capucino"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp20.000"
+                    android:textColor="#777"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuy5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- ITEM 6 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:src="@drawable/geprek"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Geprek"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp18.000"
+                    android:textColor="#777"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuy6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- ITEM 7 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:src="@drawable/milkshake"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Milkshake"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25.000"
+                    android:textColor="#777"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuy7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- ITEM 8 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:src="@drawable/pancake"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pancake"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp32.000"
+                    android:textColor="#777"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuy8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- ITEM 9 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:src="@drawable/risol_mayo"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Risol Mayo"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp15.000"
+                    android:textColor="#777"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuy9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- ITEM 10 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:src="@drawable/spageti"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spageti"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp25.000"
+                    android:textColor="#777"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuy10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- CHECKOUT BUTTON -->
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Out"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#000000"
-            android:textColor="#FFFFFF" />
-        **</LinearLayout>** <Button
-        android:id="@+id/btnCheckout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Check Out"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#000000"
-        android:textColor="#FFFFFF"
-        android:textAllCaps="false" />
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 </ScrollView>
